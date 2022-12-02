@@ -13,5 +13,5 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Print(day2.Part1(string(content)))
+	fmt.Print(day2.Part2(string(content)))
 }
