@@ -18,6 +18,22 @@ CrZsJsPPZsGzwwsLwLmpwMDwA`
 	}
 }
 
+func TestPart2(t *testing.T) {
+	input := `vJrwpWtwJgWrhcsFMMfFFhFp
+jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
+PmmdzqPrVvPwwTWBwg
+wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
+ttgJtRGJQctTZtZT
+CrZsJsPPZsGzwwsLwLmpwMDwA`
+
+	exp := 70
+	got := Part2(input)
+
+	if exp != got {
+		t.Errorf("expected %d, got %d", exp, got)
+	}
+}
+
 func TestGetNum(t *testing.T) {
 	var tests = []struct {
 		name  string
