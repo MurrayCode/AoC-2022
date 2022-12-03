@@ -9,10 +9,10 @@ func Part1(input string) int {
 	arr := strings.Split(input, "\n")
 	var res int
 	for _, i := range arr {
-		one := strings.Split(i[0:len(i)/2], "")
-		two := strings.Split(i[len(i)/2:], "")
+		one := i[0 : len(i)/2]
+		two := i[len(i)/2:]
 		for x, j := range one {
-			if strings.Contains(strings.Join(two, ""), string(j)) {
+			if strings.Contains(two, string(j)) {
 				res += GetNum(string(one[x]))
 				break
 			}
