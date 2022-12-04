@@ -1,7 +1,6 @@
 package day4
 
 import (
-	"reflect"
 	"testing"
 )
 
@@ -33,23 +32,5 @@ func TestPart2(t *testing.T) {
 
 	if exp != got {
 		t.Errorf("expected %d, got %d", exp, got)
-	}
-}
-
-func TestContains(t *testing.T) {
-
-	got := contains([]int{1, 2, 3}, 3)
-	exp := true
-
-	if got != exp {
-		t.Errorf("expected %v, got %v", exp, got)
-	}
-}
-
-func TestMakeRange(t *testing.T) {
-	got := makeRange(0, 3)
-	exp := []int{0, 1, 2, 3}
-	if !reflect.DeepEqual(exp, got) {
-		t.Errorf("expected %v, got %v", exp, got)
 	}
 }
