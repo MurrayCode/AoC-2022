@@ -9,9 +9,9 @@ func Part1(input string) int {
 	arr := strings.Split(input, "\n")
 	var res int
 	for _, i := range arr {
-		test := strings.Split(i, ",")
-		one := strings.Split(test[0], "-")
-		two := strings.Split(test[1], "-")
+		nums := strings.Split(i, ",")
+		one := strings.Split(nums[0], "-")
+		two := strings.Split(nums[1], "-")
 		rangeOneMin, _ := strconv.Atoi(one[0])
 		rangeOneMax, _ := strconv.Atoi(one[1])
 
@@ -34,9 +34,9 @@ func Part2(input string) int {
 	arr := strings.Split(input, "\n")
 	var res int
 	for _, i := range arr {
-		test := strings.Split(i, ",")
-		one := strings.Split(test[0], "-")
-		two := strings.Split(test[1], "-")
+		nums := strings.Split(i, ",")
+		one := strings.Split(nums[0], "-")
+		two := strings.Split(nums[1], "-")
 		rangeOneMin, _ := strconv.Atoi(one[0])
 		rangeOneMax, _ := strconv.Atoi(one[1])
 
