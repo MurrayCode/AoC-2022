@@ -5,13 +5,13 @@ import (
 	"log"
 	"os"
 
-	"github.com/MurrayCode/AoC-2022/day3"
+	"github.com/MurrayCode/AoC-2022/day4"
 )
 
 func main() {
-	content, err := os.ReadFile("day3/input.txt")
+	content, err := os.ReadFile("day4/input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println(day3.Part2(string(content)))
+	fmt.Println(day4.Part1(string(content)))
 }
